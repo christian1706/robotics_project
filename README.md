@@ -60,7 +60,7 @@ rosrun tf static_transform_publisher 0 0 0 0 0 0 map base_link 0
 ```
 ## RESULT
 
-
+![Alt text](https://github.com/christian1706/robotics_project/blob/main/git1.png)
 
 ## REFERENCES
  
