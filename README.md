@@ -40,8 +40,28 @@ Save the map after one loop of the autorace by calling this service:
 ```bash
 rosservice call /orb_slam2_mono/save_map map.bin
 ```
+After saving the map launch execute the command
+```bash
+roslaunch orb_slam2_ros map.launch
+```
+
+ Run rviz with the default orb_slam2_ros package config found at the location 
+
+ ```bash
+cd ~/catkin_ws/src/orb_slam2_ros/ros/config/rvoz_config.rviz
+```
+
+launch these two transformations
+ ```bash
+rosrun tf static_transform_publisher 0 0 0 0 0 0 map base_footprint 0
+```
+ ```bash
+rosrun tf static_transform_publisher 0 0 0 0 0 0 map base_link 0
+```
 ## RESULT
- 
+
+
+
 ## REFERENCES
  
 [ orb_slam_2_ros](https://wiki.ros.org/orb_slam2_ros)
